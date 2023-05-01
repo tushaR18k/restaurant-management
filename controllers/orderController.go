@@ -80,6 +80,7 @@ func CreateOrder() gin.HandlerFunc {
 			if err != nil {
 				msg := fmt.Sprintf("message: Table was not found")
 				c.JSON(http.StatusInternalServerError, gin.H{"error": msg})
+				return
 			}
 		}
 		order.Created_at, _ = time.Parse(time.RFC3339, time.Now().Format(time.RFC3339))

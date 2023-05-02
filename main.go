@@ -1,9 +1,9 @@
 package main
 
 import (
-	"go-fiber-crm-basic/database"
-	"golang-restaurant-management/middleware"
-	"golang-restaurant-management/routes"
+	"golang-restaurant-management/database"
+	middleware "golang-restaurant-management/middleware"
+	routes "golang-restaurant-management/routes"
 	"os"
 
 	"github.com/gin-gonic/gin"
